@@ -50,7 +50,13 @@ const SideSection = () => {
             <FormControl component="fieldset">
               <FormGroup>
                 <FormControlLabel
-                  control={<Checkbox onChange={handleCheck} name="one" />}
+                  control={
+                    <Checkbox
+                      onChange={handleCheck}
+                      checked={checked}
+                      name="one"
+                    />
+                  }
                   label="Buffet"
                 />
                 <FormControlLabel
